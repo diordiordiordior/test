@@ -11,7 +11,7 @@ function parsePythPriceData(data) {
     const dataView = new DataView(data.buffer, data.byteOffset, data.byteLength);
     
     // These offsets need to be adjusted based on the Pyth data structure
-    const priceOffset = 0; // Placeholder: replace with the actual byte offset
+    const priceOffset = price; // Placeholder: replace with the actual byte offset
     const exponentOffset = -8; // Placeholder: replace with the actual byte offset
     
     // Read the price and the exponent
