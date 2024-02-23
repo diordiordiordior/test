@@ -12,7 +12,7 @@ function parsePythPriceData(data) {
     
     // These offsets need to be adjusted based on the Pyth data structure
     const priceOffset = 0; // Placeholder: replace with the actual byte offset
-    const exponentOffset = 4; // Placeholder: replace with the actual byte offset
+    const exponentOffset = -8; // Placeholder: replace with the actual byte offset
     
     // Read the price and the exponent
     const rawPrice = dataView.getInt32(priceOffset, true); // Placeholder: data type and offset
