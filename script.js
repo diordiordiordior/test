@@ -4,7 +4,7 @@ import { Connection, PublicKey } from '@solana/web3.js';
 const connection = new Connection('https://api.mainnet-beta.solana.com');
 
 // Pyth Network price account for SOL/USD on devnet
-const pythPriceAccount = new PublicKey('Arpp5Ya5ZQc9Qf3tFbBASQ4RuE3sLjCBpypUfDgjLxZx');
+const pythPriceAccount = new PublicKey('H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG');
 
 // Define the function to parse the Pyth price data
 function parsePythPriceData(data) {
