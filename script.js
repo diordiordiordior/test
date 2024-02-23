@@ -1,10 +1,10 @@
 import { Connection, PublicKey } from '@solana/web3.js';
 
 // Connect to the Solana devnet cluster
-const connection = new Connection('https://api.devnet.solana.com');
+const connection = new Connection('https://api.mainnet-beta.solana.com');
 
 // Pyth Network price account for SOL/USD on devnet
-const pythPriceAccount = new PublicKey('H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG');
+const pythPriceAccount = new PublicKey('Arpp5Ya5ZQc9Qf3tFbBASQ4RuE3sLjCBpypUfDgjLxZx');
 
 function fetchPrice() {
     connection.getAccountInfo(pythPriceAccount)
